@@ -20,10 +20,7 @@ const menuData = {
             subtitle: 'Available with oat milk, almond milk, or dairy',
             order: 1,
             items: [
-                {
-                    title: "Latte",
-                    subtitle: 'Hot/Iced'
-                },
+                { title: "Latte", subtitle: 'Hot/Iced' },
                 { title: 'Cappuccino' },
                 { title: 'Espresso' },
                 { title: 'Cold Foam Iced Latte' },
