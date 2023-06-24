@@ -20,11 +20,11 @@ const client = new ApolloClient({
 export default function MyApp({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
-      <main className={openSans.className}>
+      <div className={openSans.className}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      </main>
+      </div>
     </ApolloProvider>
   );
 }

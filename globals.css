@@ -7,7 +7,7 @@ should go here is default overrides */
 @tailwind utilities;
 
 html, head, body {
-  background-color: #FAF9EC;
+  background-color: #FEFDF0;
 }
 
 body {

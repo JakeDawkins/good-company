@@ -1,5 +1,7 @@
 import React from 'react';
 import Menu from '../components/menu';
+import Carousel from '../components/carousel';
+import Coffee from '../components/coffee';
 
 function Home() {
 
@@ -11,7 +13,12 @@ function Home() {
       <p className="">
         Good fuckin' coffee & pastries for good fuckin' people.
       </p>
+      <div className="mt-8" />
+      <Carousel />
+      <div className="mt-8" />
       <Menu />
+      <div className="mt-8" />
+      <Coffee />
     </>
   );
 }

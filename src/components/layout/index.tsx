@@ -1,5 +1,6 @@
 import React from 'react';
 import ErrorBoundary from '../errorBoundary';
+import Footer from '../footer';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -7,10 +8,15 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div className="flex flex-row absolute top-0 bottom-0 right-0 left-0 overflow-y-scroll">
+    <div className="flex flex-col mx-auto w-full absolute top-0 bottom-0 right-0 left-0 overflow-y-scroll p-4 pb-8" style={{
+      maxWidth: 768
+    }}>
       <ErrorBoundary>
-        <main className="mx-auto p-4 max-w-500">{children}</main>
+        <main>{children}</main>
       </ErrorBoundary>
+      
+      <div className="mt-8" />
+      <Footer />
     </div>
   );
 }
