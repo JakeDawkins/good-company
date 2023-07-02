@@ -39,6 +39,19 @@ const menuData = {
         { title: 'Pistachio' },
       ],
     },
+    {
+      title: 'Assorted Teas',
+      subtitle: '',
+      order: 2,
+      items: [
+        { title: 'Hibiscus Berry' },
+        { title: 'Strawberry' },
+        { title: 'Afternoon Tea (black)' },
+        { title: 'Lemon (green)' },
+        { title: 'Lemon (herbal)' },
+        { title: 'Lemon & Ginger' },
+      ],
+    },
   ],
 };
 
