@@ -13,7 +13,7 @@ const menuData = {
         {
           title: 'Vegan Coffee Cake',
           subtitle:
-            'A declisious vegan coffee cake, which ironically has no coffee in it. ',
+            'A delicious vegan coffee cake, which ironically has no coffee in it. ',
         },
       ],
     },

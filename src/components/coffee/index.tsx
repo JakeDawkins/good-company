@@ -3,7 +3,7 @@ import { useState } from 'react';
 const coffeeData = {
   roaster: 'Little Wolf',
   // about the roaster -- where they're based, ethos, etc.
-  roasterNotes: 'This coffee was roasted on June 13th.',
+  roasterNotes: '',
   roasterUrl: 'https://littlewolf.coffee/',
   name: 'Las Perlitas',
   tastingNotes: 'Plum, apple, and sugar',
