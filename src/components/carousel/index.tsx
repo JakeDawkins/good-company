@@ -21,7 +21,7 @@ const Carousel = () => {
 
     return (
         <div>
-            <Image style={{ backgroundColor: '#895D2B', width: "100%", height: '400px', objectFit: 'cover' }} width={500} height={300} src={items[current]} alt={"Coffee photos"} />
+            <Image style={{ backgroundColor: '#895D2B', width: "100%", height: '300px', objectFit: 'cover' }} width={500} height={300} src={items[current]} alt={"Coffee photos"} />
         </div>
     );
 }
