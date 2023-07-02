@@ -46,9 +46,8 @@ const menuData = {
       items: [
         { title: 'Hibiscus Berry' },
         { title: 'Strawberry' },
-        { title: 'Afternoon Tea (black)' },
-        { title: 'Lemon (green)' },
-        { title: 'Lemon (herbal)' },
+        { title: "Harrod's Afternoon Tea (black)" },
+        { title: 'Lemon', subtitle: 'Available in green/herbal teas' },
         { title: 'Lemon & Ginger' },
       ],
     },
@@ -71,7 +70,7 @@ const Menu = () => {
                   className="mt-2 border-l pl-2 border-black"
                 >
                   <h4 className="text-md">{item.title}</h4>
-                  <p className="text-xs">{item.subtitle}</p>
+                  <p className="text-sm">{item.subtitle}</p>
                 </div>
               );
             })}
