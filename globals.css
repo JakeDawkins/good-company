@@ -6,10 +6,6 @@ should go here is default overrides */
 @tailwind components;
 @tailwind utilities;
 
-html, head, body {
-  background-color: #FEFDF0;
-}
-
 body {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
     'Arial', sans-serif;

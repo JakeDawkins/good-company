@@ -1,6 +1,8 @@
 import React from 'react';
 import ErrorBoundary from '../errorBoundary';
 import Footer from '../footer';
+import Nav from '../Nav';
+import Header from '../header';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -15,6 +17,9 @@ function Layout({ children }: LayoutProps) {
       }}
     >
       <ErrorBoundary>
+        <nav className="mb-12">
+          <Nav />
+        </nav>
         <main>{children}</main>
       </ErrorBoundary>
 

@@ -6,14 +6,13 @@ const menuData = {
       order: 0,
       items: [
         {
-          title: 'Shortbread cookies',
+          title: '36-hour Chocolate Chip Cookies',
           subtitle:
-            'Inspired by Ted Lasso, these shortbread cookies are made with four simple ingredients, and pair perfectly with a cup of coffee',
+            "Everyone has had chocolate chip cookies, but most chocolate chip cookies aren't set to rest 36 hours before baking",
         },
         {
-          title: 'Vegan Coffee Cake',
-          subtitle:
-            'A delicious vegan coffee cake, which ironically has no coffee in it. ',
+          title: 'Vegan Raspberry/Blueberry Muffins',
+          subtitle: 'A nice berry addition to the menu.',
         },
       ],
     },
@@ -35,7 +34,7 @@ const menuData = {
       order: 2,
       items: [
         { title: 'Cinnamon Dolce' },
-        { title: 'Vanilla Cardamom' },
+        { title: 'Vanilla Bean' },
         { title: 'Pistachio' },
       ],
     },
@@ -56,11 +55,18 @@ const menuData = {
 
 const Menu = () => {
   return (
-    <div className="flex flex-col">
-      <h2 className="text-3xl font-light border-b border-black">Menu</h2>
+    <div className="flex flex-col items-center">
+      <h1 className="text-4xl font-light text-center">August Menu</h1>
+      <p className="mt-4 text-center">
+        Every month, we work to develop a menu with seasonal flavors and
+        pastries. These ideas come from a number of recommendations, seasonal
+        influences, and some ideas of our own. All of our pastries and coffee
+        flavorings are made in-house with the best ingredients.
+      </p>
+
       {menuData.sections.map((section) => {
         return (
-          <div key={section.title} className="mt-4">
+          <div key={section.title} className="mt-8 w-full">
             <h3 className="text-xl font-light">{section.title}</h3>
             <p className="text-sm">{section.subtitle}</p>
             {section.items.map((item) => {

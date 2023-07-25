@@ -1,24 +1,15 @@
 import React from 'react';
-import Menu from '../components/menu';
-import Carousel from '../components/carousel';
-import Coffee from '../components/coffee';
+import Image from 'next/image';
+import Logo from '../assets/good-company-logo.png';
+import Header from '../components/header';
 
 function Home() {
-
   return (
     <>
-      <h1 className="text-4xl font-light " style={{
-        color: '#482E1D'
-      }}>Good Company</h1>
-      <p className="">
-        Good fuckin' coffee & pastries for good fuckin' people.
-      </p>
-      <div className="mt-8" />
-      <Carousel />
-      <div className="mt-8" />
-      <Menu />
-      <div className="mt-8" />
-      <Coffee />
+      <Header />
+      <div className="flex flex-row justify-center items-center">
+        <Image src={Logo} alt="Good company logo" height={150} />
+      </div>
     </>
   );
 }
