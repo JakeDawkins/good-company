@@ -12,7 +12,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <>
       <Head>
-        <title>Good Company</title>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <div
         className="flex flex-col mx-auto w-full absolute top-0 bottom-0 right-0 left-0 p-4 pb-8"
