@@ -1,31 +1,8 @@
 const menuData = {
   sections: [
     {
-      title: 'Espresso Drinks',
-      subtitle: 'Available with almond, dairy, oat, and "Myracle" milk',
-      order: 1,
-      items: [
-        { title: 'Cappuccino' },
-        { title: 'Cold Foam Iced Latte' },
-        { title: 'Espresso' },
-        { title: 'Latte', subtitle: 'Hot/Iced' },
-      ],
-    },
-    {
-      title: 'Flavors',
-      subtitle:
-        'Syrups homemade with fresh ingredients and infused into a simple syrup',
-      order: 2,
-      items: [
-        { title: 'Cinnamon Dolce' },
-        { title: 'Pistachio' },
-        { title: 'Vanilla Bean' },
-      ],
-    },
-    {
       title: 'Pastries',
       subtitle: 'Pastries baked in-house for your enjoyment.',
-      order: 0,
       items: [
         {
           title: '36-hour Chocolate Chip Cookies',
@@ -39,9 +16,29 @@ const menuData = {
       ],
     },
     {
+      title: 'Espresso Drinks',
+      subtitle: 'Available with almond, dairy, oat, and "Myracle" milk',
+      items: [
+        { title: 'Cappuccino' },
+        { title: 'Cold Foam Iced Latte' },
+        { title: 'Espresso' },
+        { title: 'Latte', subtitle: 'Hot/Iced' },
+      ],
+    },
+    {
+      title: 'Flavors',
+      subtitle:
+        'Syrups homemade with fresh ingredients and infused into a simple syrup',
+      items: [
+        { title: 'Cinnamon Dolce' },
+        { title: 'Pistachio' },
+        { title: 'Vanilla Bean' },
+      ],
+    },
+    {
       title: 'Assorted Teas',
-      subtitle: '',
-      order: 2,
+      subtitle:
+        "Don't drink coffee, or want something less caffeinated? We've got you covered",
       items: [
         { title: "Harrod's Afternoon Tea (black)" },
         { title: 'Hibiscus Berry' },

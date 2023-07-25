@@ -25,13 +25,14 @@ export default function About() {
           <p>
             Jake first started drinking coffee in high school. There was a
             McDonald&apos;s down the street, and he would drive there with his
-            mom every day to learn how to drive and force himself to like coffee
-            (with 6 creams and 6 sugars, reheated the next morning before
-            school, to be exact). After many coffees, a job at Starbucks to
-            learn the gist of operating a busy espresso bar, and years of
-            tinkering with different ways of brewing coffee, Jake still loves
-            sweet coffee, but he's picked up a new interest in specialty coffee
-            as well, and loves to share his creations with his friends.
+            mom every day to learn how to drive and force himself to like
+            coffee. His order was 6 creams and 6 sugars, reheated the next
+            morning before school, to be exact. After many coffees, a job at
+            Starbucks to learn the gist of operating a busy espresso bar, and
+            years of tinkering with different ways of brewing coffee, Jake still
+            loves sweet coffee. But he's also discovered a new interest in
+            specialty coffee, though, which loves to share with people he cares
+            about.
           </p>
         </div>
         {/* photo - jake */}
