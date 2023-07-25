@@ -1,5 +1,6 @@
 import Link from 'next/link';
+import About from '../components/about';
 
 export default function AboutPage() {
-  return <div className="flex flex-row"></div>;
+  return <About />;
 }

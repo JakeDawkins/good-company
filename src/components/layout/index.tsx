@@ -1,8 +1,7 @@
 import React from 'react';
 import ErrorBoundary from '../errorBoundary';
 import Footer from '../footer';
-import Nav from '../Nav';
-import Header from '../header';
+import Nav from '../nav';
 
 interface LayoutProps {
   children: React.ReactNode;
