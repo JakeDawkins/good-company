@@ -6,7 +6,6 @@ export default function MenuPage() {
     <>
       <Head>
         <title>Menu | Good Company</title>
-        <meta name="title" property="og:title" content="Menu | Good Company" />
         <meta
           name="description"
           property="og:description"

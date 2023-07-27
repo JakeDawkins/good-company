@@ -12,11 +12,10 @@ function Home() {
     <>
       <Head>
         <title>Home | Good Company</title>
-        <meta name="title" property="og:title" content="Home | Good Company" />
         <meta
           name="description"
           property="og:description"
-          content="A monthly coffee shop, hosted by Jake Dawkins and Emily Gaudet in NYC to bring people together."
+          content="Here for a silly time, not a long time"
           key="desc"
         />
       </Head>
