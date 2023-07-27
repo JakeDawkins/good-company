@@ -24,13 +24,13 @@ export default function About() {
         <div className="lg:w-2/3 sm:mt-8 lg:mt-0">
           <p>
             Jake first started drinking coffee in high school from the
-            McDonald&apos;s down the street. He would drive there with his mom
-            every day afternoon to learn how to drive, and force himself to like
+            McDonald&apos;s down the street. To practice driving, he would go
+            there with his mom every afternoon, and force himself to like
             coffee. His order was 6 creams and 6 sugars, reheated the next
             morning before school, to be exact. After many coffees, a job at
             Starbucks to learn the gist of operating a busy espresso bar, years
             of tinkering with different ways of brewing coffee, and an intensive
-            coffee tasting class, he&apos;s discovered a new interest in
+            coffee-tasting class, he&apos;s discovered a new interest in
             specialty coffee. Don&apos;t worry, he still loves his sweet coffees
             too! Jake loves to share his coffee and coffee knowledge with the
             people he cares about, and hopes you enjoy his drinks and homemade
