@@ -27,7 +27,7 @@ function Layout({ children }: LayoutProps) {
         />
       </Head>
       <div
-        className="flex flex-col mx-auto w-full absolute top-0 bottom-0 right-0 left-0 p-4 pb-8"
+        className="flex flex-col mx-auto w-full absolute top-0 bottom-0 right-0 left-0 p-4 pt-8 pb-8"
         style={{
           maxWidth: 768,
         }}

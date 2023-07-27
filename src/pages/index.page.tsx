@@ -6,6 +6,7 @@ import Header from '../components/header';
 import Logo from '../assets/good-company-logo.png';
 import JakeAndEmily from '../assets/jake-and-emily.jpg';
 import JakeAndEmily2 from '../assets/jake-and-emily-2.jpg';
+import Upcoming from '../components/upcoming';
 
 function Home() {
   return (
@@ -25,7 +26,18 @@ function Home() {
         <Image src={Logo} alt="Good company logo" height={150} />
       </div>
 
-      <div className="flex flex-row justify-center items-center mt-12 flex-wrap -ml-4">
+      <div className="flex justify-center flex-col items-center">
+        <p className="uppercase font-bold leading-snug text-center">
+          Here for a sily time,
+          <br />
+          not a long time
+        </p>
+      </div>
+
+      {/* <div className="mt-8"></div> */}
+      <Upcoming />
+
+      <div className="flex flex-row justify-center items-center mt-8 flex-wrap -ml-4">
         <Image
           src={JakeAndEmily}
           alt="Jake and Emily"
