@@ -13,6 +13,18 @@ function Layout({ children }: LayoutProps) {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="title" property="og:title" content="Good Company" />
+        <meta name="type" property="og:type" content="website" />
+        <meta
+          name="image"
+          property="og:image"
+          content="https://www.goodcompany.coffee/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgood-company-logo.0fbfd5fe.png&w=640&q=75&dpl=dpl_3GC663EXTmvKizR2TVtAXjU9EQUh"
+        />
+        <meta
+          name="url"
+          property="og:url"
+          content="https://www.goodcompany.coffee"
+        />
       </Head>
       <div
         className="flex flex-col mx-auto w-full absolute top-0 bottom-0 right-0 left-0 p-4 pb-8"
