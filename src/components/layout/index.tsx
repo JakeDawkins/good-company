@@ -18,7 +18,7 @@ function Layout({ children }: LayoutProps) {
         <meta
           name="image"
           property="og:image"
-          content="https://www.goodcompany.coffee/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgood-company-logo.0fbfd5fe.png&w=640&q=75&dpl=dpl_3GC663EXTmvKizR2TVtAXjU9EQUh"
+          content="https://www.goodcompany.coffee/goodcompany-card.png"
         />
         <meta
           name="url"
