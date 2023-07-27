@@ -5,6 +5,7 @@ import Header from '../components/header';
 
 import Logo from '../assets/good-company-logo.png';
 import JakeAndEmily from '../assets/jake-and-emily.jpg';
+import JakeAndEmily2 from '../assets/jake-and-emily-2.jpg';
 
 function Home() {
   return (
@@ -23,8 +24,19 @@ function Home() {
         <Image src={Logo} alt="Good company logo" height={150} />
       </div>
 
-      <div className="flex flex-row justify-center items-center mt-12">
-        <Image src={JakeAndEmily} alt="Jake and Emily" height={300} />
+      <div className="flex flex-row justify-center items-center mt-12 flex-wrap -ml-4">
+        <Image
+          src={JakeAndEmily}
+          alt="Jake and Emily"
+          height={300}
+          className="flex-1 ml-4 mb-4"
+        />
+        <Image
+          src={JakeAndEmily2}
+          alt="Jake and Emily"
+          height={300}
+          className="ml-4 flex-1 mb-4"
+        />
       </div>
     </>
   );
