@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const menuData = {
   sections: [
     {
@@ -14,6 +16,14 @@ const menuData = {
           subtitle: 'A berry nice addition to our menu and your day',
         },
       ],
+    },
+    {
+      type: 'coffee',
+      roaster: 'Little Wolf',
+      region: 'Colombia',
+      roasterLocation: 'Ipswich, MA',
+      roastDate: 'July 24th, 2023',
+      url: 'https://littlewolf.coffee/collections/coffee/products/lote-3',
     },
     {
       title: 'Espresso Drinks',
@@ -61,12 +71,33 @@ const Menu = () => {
         coffee flavorings are made in-house with the best ingredients.
       </p>
 
+      <div className="w-24 border-t border-t-black mt-8" />
+
       {menuData.sections.map((section) => {
+        if (section.type === 'coffee')
+          return (
+            <div className="p-8 mt-8 border border-black rounded-lg">
+              <p>
+                Today&apos;s coffee was grown in {section.region}, and roasted
+                by {section.roaster} in {section.roasterLocation}. on{' '}
+                {section.roastDate}.{' '}
+                <Link
+                  href={section.url}
+                  target="_blank"
+                  className="text-blue underline font-semibold"
+                >
+                  Click here
+                </Link>{' '}
+                to learn more.
+              </p>
+            </div>
+          );
+
         return (
           <div key={section.title} className="mt-8 w-full">
             <h3 className="text-xl font-semibold">{section.title}</h3>
             <p className="text-sm">{section.subtitle}</p>
-            {section.items.map((item) => {
+            {section.items?.map((item) => {
               return (
                 <div
                   key={item.title}
@@ -80,6 +111,17 @@ const Menu = () => {
           </div>
         );
       })}
+
+      {/* <div className="p-8 my-8 border border-gray-500 rounded-lg">
+        <p>
+          Today&apos;s coffee is Colombian-grown, and roasted by Little Wolf in
+          Ipswich, MA.{' '}
+          <Link href="/coffee" className="text-blue underline">
+            Click here
+          </Link>{' '}
+          to learn more.
+        </p>
+      </div> */}
     </div>
   );
 };

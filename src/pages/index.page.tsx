@@ -34,7 +34,6 @@ function Home() {
         </p>
       </div>
 
-      {/* <div className="mt-8"></div> */}
       <Upcoming />
 
       <div className="flex flex-row justify-center items-center mt-8 flex-wrap -ml-4">
