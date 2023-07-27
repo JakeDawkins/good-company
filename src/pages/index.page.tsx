@@ -28,7 +28,7 @@ function Home() {
 
       <div className="flex justify-center flex-col items-center">
         <p className="uppercase font-bold leading-snug text-center">
-          Here for a sily time,
+          Here for a silly time,
           <br />
           not a long time
         </p>
