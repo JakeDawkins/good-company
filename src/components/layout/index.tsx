@@ -27,7 +27,7 @@ function Layout({ children }: LayoutProps) {
           <main>{children}</main>
         </ErrorBoundary>
 
-        <div className="mt-8" />
+        <div className="mt-12" />
         <Footer />
       </div>
     </>

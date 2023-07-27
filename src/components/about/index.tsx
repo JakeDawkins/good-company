@@ -8,14 +8,14 @@ export default function About() {
     <div className="flex flex-col items-center">
       <h1 className="text-4xl font-light text-center">About Us</h1>
       <p className="mt-4 text-center">
-        Welcome to Good Company! We&apos;re so happy you&apos;re here. I could
-        write a whole blurb about our grand ideas for community, connection, and
-        friendship; but truthfully this idea was inspired by a TikTok Emily saw
-        earlier this year. Though the concept was not originally ours, it has
-        grown into one of our favorite days of each month. We spend so much time
-        connecting with each other through text and social media, it is easy to
-        forget the beauty of true human interaction. So come for the coffee and
-        pastries, stay for the vibes and good times.
+        Welcome to Good Company! We&apos;re so happy you're here. We could write
+        a whole blurb about how this came to be due to our grand ideas for
+        community, connection, and friendship; but truthfully this idea was
+        inspired by a TikTok Emily saw earlier this year. Though the concept was
+        not originally ours, it has grown into one of our favorite days of each
+        month. We spend so much time connecting with each other through text and
+        social media, it is easy to forget the beauty of true human interaction.
+        So come for the coffee and pastries, stay for the vibes and good times
       </p>
 
       <h2 className="text-2xl font-semibold text-center mt-8">Our Barista</h2>
@@ -23,16 +23,18 @@ export default function About() {
         {/* bio - jake */}
         <div className="lg:w-2/3 sm:mt-8 lg:mt-0">
           <p>
-            Jake first started drinking coffee in high school. There was a
-            McDonald&apos;s down the street, and he would drive there with his
-            mom every day to learn how to drive and force himself to like
+            Jake first started drinking coffee in high school from the
+            McDonald&apos;s down the street. He would drive there with his mom
+            every day afternoon to learn how to drive, and force himself to like
             coffee. His order was 6 creams and 6 sugars, reheated the next
             morning before school, to be exact. After many coffees, a job at
-            Starbucks to learn the gist of operating a busy espresso bar, and
-            years of tinkering with different ways of brewing coffee, Jake still
-            loves sweet coffee. But he's also discovered a new interest in
-            specialty coffee, though, which loves to share with people he cares
-            about.
+            Starbucks to learn the gist of operating a busy espresso bar, years
+            of tinkering with different ways of brewing coffee, and an intensive
+            coffee tasting class, he&apos;s discovered a new interest in
+            specialty coffee. Don&apos;t worry, he still loves his sweet coffees
+            too! Jake loves to share his coffee and coffee knowledge with the
+            people he cares about, and hopes you enjoy his drinks and homemade
+            syrups each month at Good Company!
           </p>
         </div>
         {/* photo - jake */}
@@ -56,10 +58,11 @@ export default function About() {
             making desserts from scratch, and received a lot of positive
             feedback for her first from scratch dessert: the brown butter
             pumpkin cupcake with a brown butter glaze, and a Nutella filling.
-            Through small New York City kitchens, broken ovens, and limited
-            materials, Emily persevered and kept her passion for baking alive.
-            Emily is excited to be able to share her pastries each month at Good
-            Company, and hopes you enjoy them too!
+            This inspired her to try more recipes, and experiment with new
+            flavors. Through small New York City kitchens, broken ovens, and
+            limited materials, Emily persevered and kept her passion for baking
+            alive. Emily is excited to be able to share her pastries each month
+            at Good Company, and hopes you enjoy them too!
           </p>
         </div>
         {/* photo - emily */}
