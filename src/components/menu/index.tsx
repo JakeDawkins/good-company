@@ -19,6 +19,7 @@ const menuData = {
     },
     {
       type: 'coffee',
+      pending: true,
       roaster: 'Little Wolf',
       region: 'Colombia',
       roasterLocation: 'Ipswich, MA',
@@ -77,19 +78,26 @@ const Menu = () => {
         if (section.type === 'coffee')
           return (
             <div className="p-8 mt-8 border border-black rounded-lg">
-              <p>
-                Today&apos;s coffee was grown in {section.region}, and roasted
-                by {section.roaster} in {section.roasterLocation}. on{' '}
-                {section.roastDate}.{' '}
-                <Link
-                  href={section.url}
-                  target="_blank"
-                  className="text-blue underline font-semibold"
-                >
-                  Click here
-                </Link>{' '}
-                to learn more.
-              </p>
+              {section.pending ? (
+                <p>
+                  We&apos;re still searching for the perfect coffee to serve
+                  this month. Check back soon!
+                </p>
+              ) : (
+                <p>
+                  Today&apos;s coffee was grown in {section.region}, and roasted
+                  by {section.roaster} in {section.roasterLocation}. on{' '}
+                  {section.roastDate}.{' '}
+                  <Link
+                    href={section.url}
+                    target="_blank"
+                    className="text-blue underline font-semibold"
+                  >
+                    Click here
+                  </Link>{' '}
+                  to learn more.
+                </p>
+              )}
             </div>
           );
 
