@@ -85,8 +85,8 @@ const Menu = () => {
                 </p>
               ) : (
                 <p>
-                  Today&apos;s coffee was grown in {section.region}, and roasted
-                  by {section.roaster} in {section.roasterLocation} on{' '}
+                  This month&apos;s coffee was grown in {section.region}, and
+                  roasted by {section.roaster} in {section.roasterLocation} on{' '}
                   {section.roastDate}.{' '}
                   <Link
                     href={section.url}
