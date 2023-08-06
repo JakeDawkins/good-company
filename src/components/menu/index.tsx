@@ -20,11 +20,11 @@ const menuData = {
     {
       type: 'coffee',
       pending: false,
-      roaster: 'Partners Coffee Roasters',
-      region: 'Colombia, Guatmala & Honduras',
-      roasterLocation: 'Brooklyn, NY',
-      roastDate: 'July 25th, 2023',
-      url: 'https://www.partnerscoffee.com/collections/all-coffees/products/brooklyn',
+      roaster: 'Little Wolf',
+      region: 'Colombia',
+      roasterLocation: 'Ipswich, MA',
+      roastDate: 'July 27th, 2023',
+      url: 'https://littlewolf.coffee/collections/coffee/products/lote-3',
     },
     {
       title: 'Espresso Drinks',
