@@ -7,13 +7,14 @@ const menuData = {
       subtitle: 'Pastries baked in-house for your enjoyment.',
       items: [
         {
-          title: '36-hour Chocolate Chip Cookies',
+          title: 'Confetti Cake from Milk Bar',
           subtitle:
-            "Everyone has had chocolate chip cookies, but most chocolate chip cookies aren't set to rest 36 hours before baking",
+            "We decided our pastry chef shouldn't have to make her own birthday cake, so we had Milk Bar do it instead",
         },
         {
-          title: 'Vegan Raspberry/Blueberry Muffins',
-          subtitle: 'A berry nice addition to our menu and your day',
+          title: 'Vegan Pumpkin Muffins',
+          subtitle:
+            'We said she was off the hook for her birthday, not for the rest of the pastries. Enjoy this fall flavored treat!',
         },
       ],
     },
@@ -32,9 +33,15 @@ const menuData = {
       items: [
         { title: 'Cappuccino' },
         { title: 'Cold Foam Iced Latte' },
+        { title: 'Drip' },
         { title: 'Espresso' },
         { title: 'Latte', subtitle: 'Hot/Iced' },
       ],
+    },
+    {
+      title: 'Filter Coffee',
+      subtitle: 'Brewed with a Chemex for all your pour-over needs',
+      items: [],
     },
     {
       title: 'Flavors',
@@ -42,7 +49,7 @@ const menuData = {
         'Syrups homemade with fresh ingredients and infused into a simple syrup',
       items: [
         { title: 'Cinnamon Dolce' },
-        { title: 'Pistachio' },
+        { title: 'Pumpkin Spice' },
         { title: 'Vanilla Bean' },
       ],
     },
@@ -52,10 +59,7 @@ const menuData = {
         "Don't drink coffee, or want something less caffeinated? We've got you covered",
       items: [
         { title: "Harrod's Afternoon Tea (black)" },
-        { title: 'Hibiscus Berry' },
-        { title: 'Lemon', subtitle: 'Available in green/herbal teas' },
         { title: 'Lemon & Ginger' },
-        { title: 'Strawberry' },
       ],
     },
   ],
