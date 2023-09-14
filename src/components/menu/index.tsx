@@ -7,7 +7,7 @@ const menuData = {
       subtitle: 'Pastries baked in-house for your enjoyment.',
       items: [
         {
-          title: 'Confetti Cake from Milk Bar',
+          title: 'Confetti Cake from Milk Bar (Classic or Chocolate)',
           subtitle:
             "We decided our pastry chef shouldn't have to make her own birthday cake, so we had Milk Bar do it instead",
         },
@@ -21,19 +21,25 @@ const menuData = {
     {
       type: 'coffee',
       pending: false,
-      roaster: 'Little Wolf',
-      region: 'Colombia',
-      roasterLocation: 'Ipswich, MA',
-      roastDate: 'July 27th, 2023',
-      url: 'https://littlewolf.coffee/collections/coffee/products/lote-3',
+      roaster: 'Bridge City Coffee Roasters',
+      region: 'Kneya',
+      roasterLocation: 'Greenville SC',
+      roastDate: 'August 8th, 2023',
+      url: 'https://www.bridgecity.coffee/store/p/kenya-gicherori-aa-washed-process',
+    },
+    {
+      title: 'Alcoholic Beverages',
+      subtitle:
+        'As a celebratory treat, we are offering a something a little harder than coffee',
+      items: [{ title: 'Mimosa' }, { title: 'Espresso Martini' }],
     },
     {
       title: 'Espresso Drinks',
-      subtitle: 'Available with almond, dairy, oat, and "Myracle" milk',
+      subtitle: 'Available with almond, dairy, or oat milk',
       items: [
         { title: 'Cappuccino' },
         { title: 'Cold Foam Iced Latte' },
-        { title: 'Drip' },
+        { title: 'Americano' },
         { title: 'Espresso' },
         { title: 'Latte', subtitle: 'Hot/Iced' },
       ],
