@@ -22,7 +22,7 @@ const menuData = {
       type: 'coffee',
       pending: false,
       roaster: 'Bridge City Coffee Roasters',
-      region: 'Kneya',
+      region: 'Kenya',
       roasterLocation: 'Greenville SC',
       roastDate: 'August 8th, 2023',
       url: 'https://www.bridgecity.coffee/store/p/kenya-gicherori-aa-washed-process',
