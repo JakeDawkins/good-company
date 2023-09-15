@@ -74,7 +74,7 @@ const menuData = {
 const Menu = () => {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-4xl font-light text-center">August Menu</h1>
+      <h1 className="text-4xl font-light text-center">September Menu</h1>
       <p className="mt-4 text-center">
         Every month, we work to develop a menu with seasonal flavors and
         pastries. This menu is a combination of a number of recommendations,
