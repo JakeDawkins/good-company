@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Header from '../components/header';
 
-import Logo from '../assets/good-company-logo.png';
+import Logo from '../assets/good-company-logo-fall.png';
 import JakeAndEmily from '../assets/jake-and-emily.jpg';
 import JakeAndEmily2 from '../assets/jake-and-emily-2.jpg';
 import Upcoming from '../components/upcoming';
