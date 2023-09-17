@@ -27,12 +27,12 @@ const menuData = {
       roastDate: 'August 8th, 2023',
       url: 'https://www.bridgecity.coffee/store/p/kenya-gicherori-aa-washed-process',
     },
-    {
-      title: 'Alcoholic Beverages',
-      subtitle:
-        'As a celebratory treat, we are offering a something a little harder than coffee',
-      items: [{ title: 'Mimosa' }, { title: 'Espresso Martini' }],
-    },
+    // {
+    //   title: 'Alcoholic Beverages',
+    //   subtitle:
+    //     'As a celebratory treat, we are offering a something a little harder than coffee',
+    //   items: [{ title: 'Mimosa' }, { title: 'Espresso Martini' }],
+    // },
     {
       title: 'Espresso Drinks',
       subtitle: 'Available with almond, dairy, or oat milk',
@@ -44,11 +44,11 @@ const menuData = {
         { title: 'Latte', subtitle: 'Hot/Iced' },
       ],
     },
-    {
-      title: 'Filter Coffee',
-      subtitle: 'Brewed with a Chemex for all your pour-over needs',
-      items: [],
-    },
+    // {
+    //   title: 'Filter Coffee',
+    //   subtitle: 'Brewed with a Chemex for all your pour-over needs',
+    //   items: [],
+    // },
     {
       title: 'Flavors',
       subtitle:
@@ -74,7 +74,7 @@ const menuData = {
 const Menu = () => {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-4xl font-light text-center">September Menu</h1>
+      <h1 className="text-4xl font-light text-center">October Menu</h1>
       <p className="mt-4 text-center">
         Every month, we work to develop a menu with seasonal flavors and
         pastries. This menu is a combination of a number of recommendations,
