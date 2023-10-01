@@ -7,14 +7,13 @@ const menuData = {
       subtitle: 'Pastries baked in-house for your enjoyment.',
       items: [
         {
-          title: 'Confetti Cake from Milk Bar (Classic or Chocolate)',
-          subtitle:
-            "We decided our pastry chef shouldn't have to make her own birthday cake, so we had Milk Bar do it instead",
+          title: 'Brown butter pumpkin cupcakes with a Nutella filling',
+          subtitle: "Don't ask how much butter is in these, just enjoy them",
         },
         {
-          title: 'Vegan Pumpkin Muffins',
+          title: 'Vegan apple crumble ',
           subtitle:
-            'We said she was off the hook for her birthday, not for the rest of the pastries. Enjoy this fall flavored treat!',
+            'A perfect fall dessert served warm or cold, with a scoop of vegan vanilla ice cream',
         },
       ],
     },
@@ -27,12 +26,6 @@ const menuData = {
       roastDate: 'August 8th, 2023',
       url: 'https://www.bridgecity.coffee/store/p/kenya-gicherori-aa-washed-process',
     },
-    // {
-    //   title: 'Alcoholic Beverages',
-    //   subtitle:
-    //     'As a celebratory treat, we are offering a something a little harder than coffee',
-    //   items: [{ title: 'Mimosa' }, { title: 'Espresso Martini' }],
-    // },
     {
       title: 'Espresso Drinks',
       subtitle: 'Available with almond, dairy, or oat milk',
@@ -44,11 +37,6 @@ const menuData = {
         { title: 'Latte', subtitle: 'Hot/Iced' },
       ],
     },
-    // {
-    //   title: 'Filter Coffee',
-    //   subtitle: 'Brewed with a Chemex for all your pour-over needs',
-    //   items: [],
-    // },
     {
       title: 'Flavors',
       subtitle:
