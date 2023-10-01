@@ -19,7 +19,7 @@ const menuData = {
     },
     {
       type: 'coffee',
-      pending: false,
+      pending: true,
       roaster: 'Bridge City Coffee Roasters',
       region: 'Kenya',
       roasterLocation: 'Greenville SC',
