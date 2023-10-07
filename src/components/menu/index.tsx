@@ -19,12 +19,12 @@ const menuData = {
     },
     {
       type: 'coffee',
-      pending: true,
-      roaster: 'Bridge City Coffee Roasters',
+      pending: false,
+      roaster: 'Little Wolf Coffee Roasters',
       region: 'Kenya',
-      roasterLocation: 'Greenville SC',
-      roastDate: 'August 8th, 2023',
-      url: 'https://www.bridgecity.coffee/store/p/kenya-gicherori-aa-washed-process',
+      roasterLocation: 'Ipswich, MA',
+      roastDate: 'September 13th, 2023',
+      url: 'https://littlewolf.coffee/collections/coffee/products/kahete-ab',
     },
     {
       title: 'Espresso Drinks',
@@ -42,9 +42,9 @@ const menuData = {
       subtitle:
         'Syrups homemade with fresh ingredients and infused into a simple syrup',
       items: [
-        { title: 'Cinnamon Dolce' },
+        { title: 'Apple Pie' },
         { title: 'Pumpkin Spice' },
-        { title: 'Vanilla Bean' },
+        { title: 'Butter Pecan' },
       ],
     },
     {
