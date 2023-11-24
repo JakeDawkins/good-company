@@ -82,7 +82,7 @@ const Menu = () => {
             special latte. We&apos;ve infused oatmilk with graham crakers, and
             when combined with our housemade mocha syrup, a hint of liquid
             smoke, and topped with a toasted marshmallow, you&apos;ll be begging
-            for s&apos;more. <strong>Preorder before Dec 8th</strong>
+            for s&apos;more. <strong>Preorder before Dec 9th</strong>
           </p>
           <div className="flex flex-row justify-start w-full mt-4">
             <Link
