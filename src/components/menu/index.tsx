@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import Raspberry from '../../assets/raspberry.png';
 
 const menuData = {
   sections: [
@@ -7,14 +9,14 @@ const menuData = {
       subtitle: 'Pastries baked in-house for your enjoyment.',
       items: [
         {
-          title: 'Holiday Sugar Cookies',
+          title: "Emily's Famous Carrot Cake",
           subtitle:
-            'Complete with festive sprinkles and a dash of holiday cheer',
+            'Taste this cake to see why it is a fan favorite! This cake has a lovely balance of sweetness and spice, and is topped with a smooth cream cheese frosting.',
         },
         {
-          title: 'Vegan Snickerdoodle Cookies',
+          title: 'Vegan Sugar Cookies',
           subtitle:
-            'A vegan take on a classic cookie, for all of our vegan friend',
+            "Enjoy these sweet Valentine's Day sugar cookies with royal icing. These cookies are as sweet as our pastry chef!",
         },
       ],
     },
@@ -26,6 +28,37 @@ const menuData = {
       roasterLocation: 'Ipswich, MA',
       roastDate: 'September 13th, 2023',
       url: 'https://littlewolf.coffee/collections/coffee/products/kahete-ab',
+    },
+    {
+      title: 'Seasonal Drinks',
+      subtitle:
+        'A little something special for the season, available hot or iced',
+      items: [
+        {
+          title: 'Stop and Smell the Roses',
+          subtitle: 'A latte served with a rose syrup and edible rose petals',
+          icon: <span className="h-4 w-4 inline">🌹</span>,
+        },
+        {
+          title: 'I Like You Rasp-Berry Much',
+          subtitle:
+            'A latte served with raspberry syrup and whipped cream upon request',
+          icon: (
+            <Image
+              src={Raspberry}
+              width={20}
+              height={20}
+              alt="raspberry"
+              className="inline"
+            />
+          ),
+        },
+        {
+          title: "We're a Perfect Match-a",
+          subtitle: 'Traditional matcha latte',
+          icon: <span className="h-4 w-4 inline">🍵</span>,
+        },
+      ],
     },
     {
       title: 'Espresso Drinks',
@@ -42,13 +75,18 @@ const menuData = {
       title: 'Flavors',
       subtitle:
         'Syrups homemade with fresh ingredients and infused into a simple syrup',
-      items: [{ title: 'Mocha' }, { title: 'Brown Sugar Cinnamon' }],
+      items: [
+        { title: 'Raspberry' },
+        { title: 'Rose' },
+        { title: 'Vanilla Bean' },
+      ],
     },
     {
       title: 'Assorted Teas',
       subtitle:
         "Don't drink coffee, or want something less caffeinated? We've got you covered",
       items: [
+        { title: 'Ceremonial Grade Matcha' },
         { title: "Harrod's Afternoon Tea (black)" },
         { title: 'Lemon & Ginger' },
       ],
@@ -60,7 +98,7 @@ const Menu = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="font-light text-center sm:text-3xl md:text-3xl lg:text-4xl">
-        🎄 December Menu 🎄
+        February Menu
       </h1>
       <p className="mt-4 text-center">
         Every month, we work to develop a menu with seasonal flavors and
@@ -71,7 +109,7 @@ const Menu = () => {
 
       <div className="w-24 border-t border-t-black mt-8" />
 
-      <div className="w-full py-12 mt-8 bg-[#356617] text-white rounded-lg flex flex-col items-center px-4 md:px-6">
+      {/* <div className="w-full py-12 mt-8 bg-[#356617] text-white rounded-lg flex flex-col items-center px-4 md:px-6">
         <div className="py-3">
           <p className="uppercase">Holiday Special</p>
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight mt-1">
@@ -94,7 +132,7 @@ const Menu = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {menuData.sections.map((section) => {
         if (section.type === 'coffee')
@@ -131,9 +169,11 @@ const Menu = () => {
               return (
                 <div
                   key={item.title}
-                  className="mt-2 border-l pl-2 border-black"
+                  className={`border-l pl-2 border-black mt-2`}
                 >
-                  <h4 className="text-md">{item.title}</h4>
+                  <h4 className="text-md">
+                    {item.title} {item.icon}
+                  </h4>
                   <p className="text-sm">{item.subtitle}</p>
                 </div>
               );
