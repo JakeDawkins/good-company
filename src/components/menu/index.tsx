@@ -9,14 +9,14 @@ const menuData = {
       subtitle: 'Pastries baked in-house for your enjoyment.',
       items: [
         {
-          title: "Emily's Famous Carrot Cake",
+          title: 'Vegan Coffee Cake',
           subtitle:
-            'Taste this cake to see why it is a fan favorite! This cake has a lovely balance of sweetness and spice, and is topped with a smooth cream cheese frosting.',
+            'This cake is the perfect side dish for your morning cup of coffee!  What more could you want from a dessert?',
         },
         {
-          title: 'Vegan Sugar Cookies',
+          title: 'Lemon Blueberry Cupcakes',
           subtitle:
-            "Enjoy these sweet Valentine's Day sugar cookies with royal icing. These cookies are as sweet as our pastry chef!",
+            'If the answer to “what more could you want from a dessert?” Was “something light, fruity, and tangy”, then boy do I have good news for you! These lemon blueberry cupcakes are perfectly balanced, refreshing, and topped with a blueberry compote and lemon buttercream.',
         },
       ],
     },
@@ -35,28 +35,28 @@ const menuData = {
         'A little something special for the season, available hot or iced',
       items: [
         {
-          title: 'Stop and Smell the Roses',
-          subtitle: 'A latte served with a rose syrup and edible rose petals',
-          icon: <span className="h-4 w-4 inline">🌹</span>,
+          title: 'Blueberry Latte',
+          // subtitle: 'A latte served with a rose syrup and edible rose petals',
+          // icon: <span className="h-4 w-4 inline">🌹</span>,
         },
         {
-          title: 'I Like You Rasp-Berry Much',
-          subtitle:
-            'A latte served with raspberry syrup and whipped cream upon request',
-          icon: (
-            <Image
-              src={Raspberry}
-              width={20}
-              height={20}
-              alt="raspberry"
-              className="inline"
-            />
-          ),
+          title: 'Vanilla Bean Latte',
+          // subtitle:
+          //   'A latte served with raspberry syrup and whipped cream upon request',
+          // icon: (
+          //   <Image
+          //     src={Raspberry}
+          //     width={20}
+          //     height={20}
+          //     alt="raspberry"
+          //     className="inline"
+          //   />
+          // ),
         },
         {
-          title: "We're a Perfect Match-a",
-          subtitle: 'Traditional matcha latte',
-          icon: <span className="h-4 w-4 inline">🍵</span>,
+          title: 'Laveder Latte',
+          // subtitle: 'Traditional matcha latte',
+          // icon: <span className="h-4 w-4 inline">🍵</span>,
         },
       ],
     },
@@ -76,9 +76,9 @@ const menuData = {
       subtitle:
         'Syrups homemade with fresh ingredients and infused into a simple syrup',
       items: [
-        { title: 'Raspberry' },
-        { title: 'Rose' },
+        { title: 'Blueberry' },
         { title: 'Vanilla Bean' },
+        { title: 'Lavender' },
       ],
     },
     {
@@ -98,7 +98,7 @@ const Menu = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="font-light text-center sm:text-3xl md:text-3xl lg:text-4xl">
-        February Menu
+        March Menu
       </h1>
       <p className="mt-4 text-center">
         Every month, we work to develop a menu with seasonal flavors and
@@ -108,31 +108,6 @@ const Menu = () => {
       </p>
 
       <div className="w-24 border-t border-t-black mt-8" />
-
-      {/* <div className="w-full py-12 mt-8 bg-[#356617] text-white rounded-lg flex flex-col items-center px-4 md:px-6">
-        <div className="py-3">
-          <p className="uppercase">Holiday Special</p>
-          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight mt-1">
-            S'mores Mocha with Toasted Marshmallow
-          </h2>
-          <p className="max-w-[600px] text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed pt-4">
-            We&apos;re celebrating the start of the holiday season with a
-            special latte. We&apos;ve infused oatmilk with graham crakers, and
-            when combined with our housemade mocha syrup, a hint of liquid
-            smoke, and topped with a toasted marshmallow, you&apos;ll be begging
-            for s&apos;more. <strong>Preorder before Dec 8th</strong>
-          </p>
-          <div className="flex flex-row justify-start w-full mt-4">
-            <Link
-              className="flex h-10 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-[#356617] shadow transition-colors hover:bg-white/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#bd1e59] disabled:pointer-events-none disabled:opacity-50"
-              href="https://forms.gle/Ar3iYZfK9JA7K47q8"
-              target="_blank"
-            >
-              Preorder Now
-            </Link>
-          </div>
-        </div>
-      </div> */}
 
       {menuData.sections.map((section) => {
         if (section.type === 'coffee')
@@ -172,7 +147,8 @@ const Menu = () => {
                   className={`border-l pl-2 border-black mt-2`}
                 >
                   <h4 className="text-md">
-                    {item.title} {item.icon}
+                    {item.title}
+                    {/* {item?.icon ? item.icon : null} */}
                   </h4>
                   <p className="text-sm">{item.subtitle}</p>
                 </div>
