@@ -54,7 +54,7 @@ const menuData = {
           // ),
         },
         {
-          title: 'Laveder Latte',
+          title: 'Lavender Latte',
           // subtitle: 'Traditional matcha latte',
           // icon: <span className="h-4 w-4 inline">🍵</span>,
         },
@@ -71,16 +71,16 @@ const menuData = {
         { title: 'Latte', subtitle: 'Hot/Iced' },
       ],
     },
-    {
-      title: 'Flavors',
-      subtitle:
-        'Syrups homemade with fresh ingredients and infused into a simple syrup',
-      items: [
-        { title: 'Blueberry' },
-        { title: 'Vanilla Bean' },
-        { title: 'Lavender' },
-      ],
-    },
+    // {
+    //   title: 'Flavors',
+    //   subtitle:
+    //     'Syrups homemade with fresh ingredients and infused into a simple syrup',
+    //   items: [
+    //     { title: 'Blueberry' },
+    //     { title: 'Vanilla Bean' },
+    //     { title: 'Lavender' },
+    //   ],
+    // },
     {
       title: 'Assorted Teas',
       subtitle:
