@@ -22,7 +22,7 @@ const menuData = {
     },
     {
       type: 'coffee',
-      // pending: true,
+      pending: false,
       roaster: 'Bridge City Coffee',
       region: 'Ethiopia',
       roasterLocation: 'Greenville, SC',
