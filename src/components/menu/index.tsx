@@ -22,12 +22,12 @@ const menuData = {
     },
     {
       type: 'coffee',
-      pending: true,
-      roaster: 'Little Wolf Coffee Roasters',
-      region: '',
-      roasterLocation: 'Ipswich, MA',
-      roastDate: 'September 13th, 2023',
-      url: 'https://littlewolf.coffee/collections/coffee/products/kahete-ab',
+      // pending: true,
+      roaster: 'Bridge City Coffee',
+      region: 'Ethiopia',
+      roasterLocation: 'Greenville, SC',
+      roastDate: 'March 1st, 2024',
+      url: 'https://www.bridgecity.coffee/store/p/ethiopia-koke-yirgacheffe-honey-process',
     },
     {
       title: 'Seasonal Drinks',
