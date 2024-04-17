@@ -9,14 +9,24 @@ const menuData = {
       subtitle: 'Pastries baked in-house for your enjoyment.',
       items: [
         {
-          title: 'Vegan Coffee Cake',
+          title: 'Banana Bread',
           subtitle:
-            'This cake is the perfect side dish for your morning cup of coffee!  What more could you want from a dessert?',
+            'This banana bread is my tried and true recipe, and is always a crowd pleaser! Grab a slice of this dense and delicious bread and enjoy!',
         },
         {
-          title: 'Lemon Blueberry Cupcakes',
+          title: 'Carrot Cake',
           subtitle:
-            'If the answer to “what more could you want from a dessert?” Was “something light, fruity, and tangy”, then boy do I have good news for you! These lemon blueberry cupcakes are perfectly balanced, refreshing, and topped with a blueberry compote and lemon buttercream.',
+            "My most requested dessert by far is the classic carrot cake with cream cheese frosting. Perfectly spiced, tangy, and sweet, this carrot cake won't disappoint!",
+        },
+        {
+          title: 'Vegan Cinnamon Buns',
+          subtitle:
+            'It is easy to be vegan when vegan food tastes this good! Enjoy one of these sweet glazed cinnamon buns!',
+        },
+        {
+          title: 'Vegan Muffins',
+          subtitle:
+            'A coffee house staple is your simple but delicious muffin, and ours just happen to be vegan! We have plain and raspberry muffins for you to enjoy today!',
         },
       ],
     },
@@ -24,23 +34,23 @@ const menuData = {
       type: 'coffee',
       pending: false,
       roaster: 'Bridge City Coffee',
-      region: 'Ethiopia',
+      region: 'Vietnam',
       roasterLocation: 'Greenville, SC',
-      roastDate: 'March 1st, 2024',
-      url: 'https://www.bridgecity.coffee/store/p/ethiopia-koke-yirgacheffe-honey-process',
+      roastDate: 'TBD',
+      url: 'https://www.bridgecity.coffee/store/p/vietnam-fully-washed-medium-roast?utm_medium=order-summary&utm_source=order-status&utm_content=name',
     },
     {
-      title: 'Seasonal Drinks',
+      title: 'Signature Drinks',
       subtitle:
         'A little something special for the season, available hot or iced',
       items: [
         {
-          title: 'Blueberry Latte',
+          title: 'Meet me in Manila Vanilla Bean Latte',
           // subtitle: 'A latte served with a rose syrup and edible rose petals',
           // icon: <span className="h-4 w-4 inline">🌹</span>,
         },
         {
-          title: 'Vanilla Bean Latte',
+          title: 'Cinnamon Dulc-Olé Latte',
           // subtitle:
           //   'A latte served with raspberry syrup and whipped cream upon request',
           // icon: (
@@ -54,7 +64,17 @@ const menuData = {
           // ),
         },
         {
-          title: 'Lavender Latte',
+          title: "Pistachi Oh No Don't Go Latte",
+          // subtitle: 'Traditional matcha latte',
+          // icon: <span className="h-4 w-4 inline">🍵</span>,
+        },
+        {
+          title: "We're Butter (pecan) Together Latte",
+          // subtitle: 'Traditional matcha latte',
+          // icon: <span className="h-4 w-4 inline">🍵</span>,
+        },
+        {
+          title: "We'll Miss You Very Matcha Latte",
           // subtitle: 'Traditional matcha latte',
           // icon: <span className="h-4 w-4 inline">🍵</span>,
         },
