@@ -52,21 +52,6 @@ const menuData = {
           subtitle: 'A strawberry matcha latte',
           icon: <span className="h-4 w-4 inline"> 🍵</span>,
         },
-        // {
-        //   title: "Pistachi Oh No Don't Go Latte",
-        //   // subtitle: 'Traditional matcha latte',
-        //   // icon: <span className="h-4 w-4 inline">🍵</span>,
-        // },
-        // {
-        //   title: "We're Butter (pecan) Together Latte",
-        //   // subtitle: 'Traditional matcha latte',
-        //   // icon: <span className="h-4 w-4 inline">🍵</span>,
-        // },
-        // {
-        //   title: "We'll Miss You Very Matcha Latte",
-        //   // subtitle: 'Traditional matcha latte',
-        //   // icon: <span className="h-4 w-4 inline">🍵</span>,
-        // },
       ],
     },
     {
@@ -94,12 +79,7 @@ const menuData = {
       title: 'Assorted Teas',
       subtitle:
         "Don't drink coffee, or want something less caffeinated? We've got you covered",
-      items: [
-        // { title: 'Ceremonial Grade Matcha' },
-        // { title: "Harrod's Afternoon Tea (black)" },
-        { title: 'Lemon & Ginger' },
-        { title: 'Green Tea' },
-      ],
+      items: [{ title: 'Lemon & Ginger' }, { title: 'Green Tea' }],
     },
   ],
 };
