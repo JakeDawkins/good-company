@@ -20,35 +20,41 @@ function Home() {
           key="desc"
         />
       </Head>
-      <Header />
+      <div className="min-h-screen pb-12">
+        <Header />
 
-      <div className="flex flex-row justify-center items-center py-4">
-        <Image src={Logo} alt="Good company logo" height={150} />
-      </div>
+        <div className="flex flex-row justify-center items-center py-2 md:py-8">
+          <Image src={Logo} alt="Good company logo" height={150} />
+        </div>
 
-      <div className="flex justify-center flex-col items-center">
-        <p className="uppercase font-bold leading-snug text-center">
-          Here for a silly time,
-          <br />
-          not a long time
-        </p>
-      </div>
+        <div className="flex justify-center flex-col items-center mb-3 md:mb-6">
+          <p className="uppercase font-semibold leading-snug text-center text-slate tracking-wide text-sm">
+            Here for a silly time,
+            <br />
+            not a long time
+          </p>
+        </div>
 
-      <Upcoming />
+        <Upcoming />
 
-      <div className="flex flex-row justify-center items-center mt-8 flex-wrap -ml-4">
-        <Image
-          src={JakeAndEmily}
-          alt="Jake and Emily"
-          height={300}
-          className="flex-1 ml-4 mb-4"
-        />
-        <Image
-          src={JakeAndEmily2}
-          alt="Jake and Emily"
-          height={300}
-          className="ml-4 flex-1 mb-4"
-        />
+        <div className="flex flex-row justify-center items-center mt-12 flex-wrap gap-6 px-4 max-w-6xl mx-auto">
+          <div className="flex-1 min-w-70 rounded-lg overflow-hidden border border-sage/50">
+            <Image
+              src={JakeAndEmily}
+              alt="Jake and Emily"
+              height={300}
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="flex-1 min-w-70 rounded-lg overflow-hidden border border-sage/50">
+            <Image
+              src={JakeAndEmily2}
+              alt="Jake and Emily"
+              height={300}
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
       </div>
     </>
   );

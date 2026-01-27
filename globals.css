@@ -13,6 +13,23 @@ should go here is default overrides */
   --color-darkRed: #B6594C;
   --color-terracotta: #DD8E75;
   --color-lightBlue: #90AEB2;
+
+  /* Soft neutral palette */
+  --color-cream: #FDFCFB;
+  --color-warmGray: #F5F3F0;
+  --color-sage: #8FA89F;
+  --color-slate: #6B7280;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 body {
@@ -28,4 +45,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   hyphens: auto;
+  background: #FEFEFE;
+  min-height: 100vh;
 }

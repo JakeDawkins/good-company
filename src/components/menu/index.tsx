@@ -106,37 +106,35 @@ const menuData = {
 
 const Menu = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="font-light text-center sm:text-3xl md:text-3xl lg:text-4xl">
+    <div className="flex flex-col items-center px-4 py-2 md:py-8">
+      <h1 className="font-light text-center sm:text-3xl md:text-4xl lg:text-5xl text-darkGreen mb-2">
         Valentines Day Menu
       </h1>
-      <p className="mt-4 text-center">
+      <p className="mt-6 text-center max-w-2xl text-slate leading-relaxed mb-10">
         Every month, we work to develop a menu with seasonal flavors and
         pastries. This menu is a combination of a number of recommendations,
         seasonal influences, and some ideas of our own. All of our pastries and
         coffee flavorings are made in-house with the best ingredients.
       </p>
 
-      <div className="w-24 border-t border-t-black mt-8" />
-
-      {menuData.sections.map((section) => {
+      {menuData.sections.map((section, index) => {
         if (section.type === 'coffee')
           return (
-            <div className="p-8 mt-8 border border-black rounded-lg">
+            <div key={`coffee-${index}`} className="p-8 mt-8 border border-sage/50 rounded-lg w-full max-w-2xl">
               {section.pending ? (
-                <p>
+                <p className="text-center text-slate">
                   We&apos;re still searching for the perfect coffee to serve
                   this month. Check back soon!
                 </p>
               ) : (
-                <p>
+                <p className="text-center text-slate">
                   This month&apos;s coffee was grown in {section.region}, and
                   roasted by {section.roaster} in {section.roasterLocation} on{' '}
                   {section.roastDate}.{' '}
                   <Link
                     href={section.url}
                     target="_blank"
-                    className="text-blue underline font-semibold"
+                    className="text-darkGreen underline font-semibold hover:text-terracotta transition-colors"
                   >
                     Click here
                   </Link>{' '}
@@ -147,23 +145,27 @@ const Menu = () => {
           );
 
         return (
-          <div key={section.title} className="mt-8 w-full">
-            <h3 className="text-xl font-semibold">{section.title}</h3>
-            <p className="text-sm">{section.subtitle}</p>
-            {section.items?.map((item) => {
-              return (
-                <div
-                  key={item.title}
-                  className={`border-l pl-2 border-black mt-2`}
-                >
-                  <h4 className="text-md">
-                    {item.title}
-                    {item?.icon ? item.icon : null}
-                  </h4>
-                  <p className="text-sm">{item.subtitle}</p>
-                </div>
-              );
-            })}
+          <div key={section.title} className="mt-12 w-full max-w-2xl">
+            <h3 className="text-2xl font-semibold text-darkGreen mb-2">{section.title}</h3>
+            <p className="text-sm text-slate italic mb-4">{section.subtitle}</p>
+            <div className="space-y-3">
+              {section.items?.map((item) => {
+                return (
+                  <div
+                    key={item.title}
+                    className="border-l-3 pl-4 border-sage py-2"
+                  >
+                    <h4 className="text-lg font-medium text-darkGreen">
+                      {item.title}
+                      {item?.icon ? <span className="ml-2">{item.icon}</span> : null}
+                    </h4>
+                    {item.subtitle && (
+                      <p className="text-sm text-slate mt-1">{item.subtitle}</p>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         );
       })}
