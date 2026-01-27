@@ -2,9 +2,18 @@
 the app. It uses tailwind CSS to generate the output file. The only thing that
 should go here is default overrides */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 0px;
+  --breakpoint-md: 480px;
+  --breakpoint-lg: 768px;
+
+  --color-darkGreen: #37514D;
+  --color-darkRed: #B6594C;
+  --color-terracotta: #DD8E75;
+  --color-lightBlue: #90AEB2;
+}
 
 body {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',

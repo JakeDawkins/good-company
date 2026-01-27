@@ -11,11 +11,12 @@ export default function About() {
         Welcome to Good Company! We&apos;re so happy you're here. We could write
         a whole blurb about how this came to be due to our grand ideas for
         community, connection, and friendship; but truthfully this idea was
-        inspired by a TikTok Emily saw earlier this year. Though the concept was
-        not originally ours, it has grown into one of our favorite days of each
-        month. We spend so much time connecting with each other through text and
-        social media, it is easy to forget the beauty of true human interaction.
-        So come for the coffee and pastries, stay for the vibes and good times
+        inspired by a TikTok Emily saw a couple years ago in NYC. Though the
+        concept was not originally ours, it has grown into one of our favorite
+        things to host. We spend so much time connecting with each other through
+        text and social media, it is easy to forget the beauty of true human
+        interaction. So come for the coffee and pastries, stay for the vibes and
+        good times.
       </p>
 
       <h2 className="text-2xl font-semibold text-center mt-8">Our Barista</h2>

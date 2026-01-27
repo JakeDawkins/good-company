@@ -10,8 +10,8 @@ export default function AboutPage() {
         <meta
           name="description"
           property="og:description"
-          content="A monthly coffee shop, hosted by Jake Dawkins and Emily Gaudet in NYC to bring people together. See what we're about and who we are here."
           key="desc"
+          content="A monthly coffee shop, hosted by Jake Dawkins and Emily Gaudet in Valencia to bring people together. See what we're about and who we are here."
         />
       </Head>
       <About />

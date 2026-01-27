@@ -9,33 +9,22 @@ const menuData = {
       subtitle: 'Pastries baked in-house for your enjoyment.',
       items: [
         {
-          title: 'Banana Bread',
-          subtitle:
-            'This banana bread is my tried and true recipe, and is always a crowd pleaser! Grab a slice of this dense and delicious bread and enjoy!',
+          title: 'Cinnamon Rolls',
+
+          // subtitle:
+          //   'This banana bread is my tried and true recipe, and is always a crowd pleaser! Grab a slice of this dense and delicious bread and enjoy!',
         },
         {
-          title: 'Carrot Cake',
-          subtitle:
-            "My most requested dessert by far is the classic carrot cake with cream cheese frosting. Perfectly spiced, tangy, and sweet, this carrot cake won't disappoint!",
-        },
-        {
-          title: 'Vegan Cinnamon Buns',
-          subtitle:
-            'It is easy to be vegan when vegan food tastes this good! Enjoy one of these sweet glazed cinnamon buns!',
-        },
-        {
-          title: 'Vegan Muffins',
-          subtitle:
-            'A coffee house staple is your simple but delicious muffin, and ours just happen to be vegan! We have plain and raspberry muffins for you to enjoy today!',
+          title: 'Red Velvet Cookies',
         },
       ],
     },
     {
       type: 'coffee',
-      pending: false,
-      roaster: 'Bridge City Coffee',
-      region: 'Vietnam',
-      roasterLocation: 'Greenville, SC',
+      pending: true,
+      roaster: 'TBD',
+      region: 'TBD',
+      roasterLocation: 'TBD',
       roastDate: 'TBD',
       url: 'https://www.bridgecity.coffee/store/p/vietnam-fully-washed-medium-roast?utm_medium=order-summary&utm_source=order-status&utm_content=name',
     },
@@ -45,47 +34,47 @@ const menuData = {
         'A little something special for the season, available hot or iced',
       items: [
         {
-          title: 'Meet me in Manila Vanilla Bean Latte',
-          // subtitle: 'A latte served with a rose syrup and edible rose petals',
+          title: "You're berry cute",
+          subtitle: 'White chocolate raspberry mocha',
           // icon: <span className="h-4 w-4 inline">🌹</span>,
+          icon: (
+            <Image
+              src={Raspberry}
+              width={20}
+              height={20}
+              alt="raspberry"
+              className="inline"
+            />
+          ),
         },
         {
-          title: 'Cinnamon Dulc-Olé Latte',
-          // subtitle:
-          //   'A latte served with raspberry syrup and whipped cream upon request',
-          // icon: (
-          //   <Image
-          //     src={Raspberry}
-          //     width={20}
-          //     height={20}
-          //     alt="raspberry"
-          //     className="inline"
-          //   />
-          // ),
+          title: 'Find your match(a)',
+          subtitle: 'A strawberry matcha latte',
+          icon: <span className="h-4 w-4 inline"> 🍵</span>,
         },
-        {
-          title: "Pistachi Oh No Don't Go Latte",
-          // subtitle: 'Traditional matcha latte',
-          // icon: <span className="h-4 w-4 inline">🍵</span>,
-        },
-        {
-          title: "We're Butter (pecan) Together Latte",
-          // subtitle: 'Traditional matcha latte',
-          // icon: <span className="h-4 w-4 inline">🍵</span>,
-        },
-        {
-          title: "We'll Miss You Very Matcha Latte",
-          // subtitle: 'Traditional matcha latte',
-          // icon: <span className="h-4 w-4 inline">🍵</span>,
-        },
+        // {
+        //   title: "Pistachi Oh No Don't Go Latte",
+        //   // subtitle: 'Traditional matcha latte',
+        //   // icon: <span className="h-4 w-4 inline">🍵</span>,
+        // },
+        // {
+        //   title: "We're Butter (pecan) Together Latte",
+        //   // subtitle: 'Traditional matcha latte',
+        //   // icon: <span className="h-4 w-4 inline">🍵</span>,
+        // },
+        // {
+        //   title: "We'll Miss You Very Matcha Latte",
+        //   // subtitle: 'Traditional matcha latte',
+        //   // icon: <span className="h-4 w-4 inline">🍵</span>,
+        // },
       ],
     },
     {
       title: 'Espresso Drinks',
-      subtitle: 'Available with almond, dairy, or oat milk',
+      subtitle: 'Available with dairy or oat milk',
       items: [
         { title: 'Cappuccino' },
-        { title: 'Cold Foam Iced Latte' },
+        { title: 'Cortado' },
         { title: 'Americano' },
         { title: 'Espresso' },
         { title: 'Latte', subtitle: 'Hot/Iced' },
@@ -106,9 +95,10 @@ const menuData = {
       subtitle:
         "Don't drink coffee, or want something less caffeinated? We've got you covered",
       items: [
-        { title: 'Ceremonial Grade Matcha' },
-        { title: "Harrod's Afternoon Tea (black)" },
+        // { title: 'Ceremonial Grade Matcha' },
+        // { title: "Harrod's Afternoon Tea (black)" },
         { title: 'Lemon & Ginger' },
+        { title: 'Green Tea' },
       ],
     },
   ],
@@ -118,7 +108,7 @@ const Menu = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="font-light text-center sm:text-3xl md:text-3xl lg:text-4xl">
-        March Menu
+        Valentines Day Menu
       </h1>
       <p className="mt-4 text-center">
         Every month, we work to develop a menu with seasonal flavors and
@@ -168,7 +158,7 @@ const Menu = () => {
                 >
                   <h4 className="text-md">
                     {item.title}
-                    {/* {item?.icon ? item.icon : null} */}
+                    {item?.icon ? item.icon : null}
                   </h4>
                   <p className="text-sm">{item.subtitle}</p>
                 </div>

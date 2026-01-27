@@ -1,18 +1,21 @@
 import React from 'react';
 
 import '../../globals.css';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
+import { ApolloProvider } from '@apollo/client/react';
 import { Layout } from '../components';
 
 import { Open_Sans } from 'next/font/google'
- 
+
 // If loading a variable font, you don't need to specify the font weight
 const openSans = Open_Sans({
   subsets: ['latin']
 })
- 
+
 const client = new ApolloClient({
-  uri: 'https://countries.trevorblades.com/',
+  link: new HttpLink({
+    uri: 'https://countries.trevorblades.com/',
+  }),
   cache: new InMemoryCache(),
 });
 
