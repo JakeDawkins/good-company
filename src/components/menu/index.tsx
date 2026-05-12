@@ -1,58 +1,28 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import Raspberry from '../../assets/raspberry.png';
 
 const menuData = {
   sections: [
     {
       title: 'Pastries',
       subtitle: 'Pastries baked in-house for your enjoyment.',
-      items: [
-        {
-          title: 'Cinnamon Rolls',
-
-          // subtitle:
-          //   'This banana bread is my tried and true recipe, and is always a crowd pleaser! Grab a slice of this dense and delicious bread and enjoy!',
-        },
-        {
-          title: 'Red Velvet Cookies',
-        },
-      ],
+      pending: true,
+      items: [],
     },
     {
       type: 'coffee',
-      pending: true,
-      roaster: 'TBD',
-      region: 'TBD',
+      pending: false,
+      roaster: 'East Crema',
+      name: 'Day Light',
+      region: 'Ethiopia',
       roasterLocation: 'TBD',
       roastDate: 'TBD',
-      url: 'https://www.bridgecity.coffee/store/p/vietnam-fully-washed-medium-roast?utm_medium=order-summary&utm_source=order-status&utm_content=name',
+      url: 'https://eastcrema.com/products/etiopia-kambata',
     },
     {
       title: 'Signature Drinks',
-      subtitle:
-        'A little something special for the season, available hot or iced',
-      items: [
-        {
-          title: "You're berry cute",
-          subtitle: 'White chocolate raspberry mocha',
-          // icon: <span className="h-4 w-4 inline">🌹</span>,
-          icon: (
-            <Image
-              src={Raspberry}
-              width={20}
-              height={20}
-              alt="raspberry"
-              className="inline"
-            />
-          ),
-        },
-        {
-          title: 'Find your match(a)',
-          subtitle: 'A strawberry matcha latte',
-          icon: <span className="h-4 w-4 inline"> 🍵</span>,
-        },
-      ],
+      subtitle: 'A little something special, available hot or iced',
+      pending: true,
+      items: [],
     },
     {
       title: 'Espresso Drinks',
@@ -88,7 +58,7 @@ const Menu = () => {
   return (
     <div className="flex flex-col items-center px-4 py-2 md:py-8">
       <h1 className="font-light text-center sm:text-3xl md:text-4xl lg:text-5xl text-darkGreen mb-2">
-        Valentine's Day Menu
+        May Menu
       </h1>
       <p className="mt-6 text-center max-w-2xl text-slate leading-relaxed mb-10">
         Every month, we work to develop a menu with seasonal flavors and
@@ -111,9 +81,8 @@ const Menu = () => {
                 </p>
               ) : (
                 <p className="text-center text-slate">
-                  This month&apos;s coffee was grown in {section.region}, and
-                  roasted by {section.roaster} in {section.roasterLocation} on{' '}
-                  {section.roastDate}.{' '}
+                  This month&apos;s coffee was grown in {section.region} and
+                  roasted by {section.roaster}.{' '}
                   <Link
                     href={section.url}
                     target="_blank"
@@ -133,6 +102,11 @@ const Menu = () => {
               {section.title}
             </h3>
             <p className="text-sm text-slate italic mb-4">{section.subtitle}</p>
+            {section.pending && (
+              <p className="text-slate border-l-3 pl-4 border-sage py-2">
+                TBD — check back soon!
+              </p>
+            )}
             <div className="space-y-3">
               {section.items?.map((item) => {
                 return (
