@@ -5,8 +5,18 @@ const menuData = {
     {
       title: 'Pastries',
       subtitle: 'Pastries baked in-house for your enjoyment.',
-      pending: true,
-      items: [],
+      items: [
+        {
+          title: 'Tarta De Santiago',
+          subtitle:
+            'A traditional Spanish cake that pairs perfectly with a cup of coffee! Naturally gluten and dairy free, what more could you ask for?',
+        },
+        {
+          title: 'Chewy Chocolate Chip Cookies',
+          subtitle:
+            'What’s better than a chocolate chip cookie? Not much! Topped with flaky salt, these are always a crowd favorite!',
+        },
+      ],
     },
     {
       type: 'coffee',
