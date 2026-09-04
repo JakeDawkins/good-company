@@ -1,0 +1,18 @@
+#:schema https://conductor.build/schemas/settings.repo.schema.json
+
+[scripts]
+# Fresh workspace: clean, reproducible install from package-lock, then generate
+# GraphQL types (documented setup step in CLAUDE.md). Both are idempotent.
+setup = "npm ci && npm run generate:types"
+
+# Next.js dev server on this workspace's assigned port so multiple workspaces
+# don't collide. `npm run dev` is bare `next` (alias for `next dev`); -p passes through.
+run = "npm run dev -- -p $CONDUCTOR_PORT"
+
+# Each workspace runs on its own CONDUCTOR_PORT with no shared local resource,
+# so several can run at once.
+run_mode = "concurrent"
+
+# Reclaim disk from regenerable artifacts before the worktree is removed.
+# Workspace-local only; both are recreated by setup/run.
+archive = "rm -rf node_modules .next"
