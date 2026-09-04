@@ -26,17 +26,27 @@ const menuData = {
       type: 'coffee',
       pending: false,
       roaster: 'East Crema',
-      name: 'Day Light',
-      region: 'Ethiopia',
+      name: 'Blue House Espresso',
+      region: 'Brazil',
       roasterLocation: 'TBD',
       roastDate: 'TBD',
-      url: 'https://eastcrema.com/products/etiopia-kambata',
+      url: 'https://eastcrema.com/products/blue-house-espresso',
     },
     {
-      title: 'Signature Drinks',
-      subtitle: 'A little something special, available hot or iced',
-      pending: true,
-      items: [],
+      title: 'Flavors',
+      subtitle:
+        'Syrups homemade with fresh ingredients and infused into a simple syrup',
+      items: [
+        {
+          title: 'Pistachio',
+          subtitle: 'A more subtle, earthy flavor. Great in an iced latte!',
+        },
+        {
+          title: 'Butter Pecan',
+          subtitle:
+            "A flavor native to and loved by the American South. Jake's favorite ever since he first tried it!",
+        },
+      ],
     },
     {
       title: 'Espresso Drinks',
@@ -48,12 +58,6 @@ const menuData = {
         { title: 'Espresso' },
         { title: 'Latte', subtitle: 'Hot/Iced' },
       ],
-    },
-    {
-      title: 'Flavors',
-      subtitle:
-        'Syrups homemade with fresh ingredients and infused into a simple syrup',
-      items: [{ title: 'Pistachio' }, { title: 'Butter Pecan' }],
     },
     {
       title: 'Assorted Teas',
