@@ -5,9 +5,9 @@ export default function Upcoming() {
         Next event
       </p>
       <h1 className="text-3xl font-light text-center text-darkGreen mb-1">
-        Saturday, May 23rd
+        Sunday, September 6th
       </h1>
-      <h1 className="text-xl font-light text-slate">11 am - 2 pm</h1>
+      <h1 className="text-xl font-light text-slate">11:30 am</h1>
     </div>
   );
 }
