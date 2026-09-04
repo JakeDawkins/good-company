@@ -7,14 +7,18 @@ const menuData = {
       subtitle: 'Pastries baked in-house for your enjoyment.',
       items: [
         {
-          title: 'Tarta De Santiago',
-          subtitle:
-            'A traditional Spanish cake that pairs perfectly with a cup of coffee! Naturally gluten and dairy free, what more could you ask for?',
+          title: 'Brown Butter Toffee & Chocolate Chip Cookies',
         },
         {
-          title: 'Chewy Chocolate Chip Cookies',
-          subtitle:
-            'What’s better than a chocolate chip cookie? Not much! Topped with flaky salt, these are always a crowd favorite!',
+          title: 'Birthday Cake',
+        },
+        {
+          title: 'Raspberry Muffins',
+          icon: (
+            <span className="inline-block align-middle text-xs font-semibold uppercase tracking-wide text-white bg-darkGreen rounded-full px-2 py-0.5">
+              Vegan
+            </span>
+          ),
         },
       ],
     },
@@ -45,16 +49,12 @@ const menuData = {
         { title: 'Latte', subtitle: 'Hot/Iced' },
       ],
     },
-    // {
-    //   title: 'Flavors',
-    //   subtitle:
-    //     'Syrups homemade with fresh ingredients and infused into a simple syrup',
-    //   items: [
-    //     { title: 'Blueberry' },
-    //     { title: 'Vanilla Bean' },
-    //     { title: 'Lavender' },
-    //   ],
-    // },
+    {
+      title: 'Flavors',
+      subtitle:
+        'Syrups homemade with fresh ingredients and infused into a simple syrup',
+      items: [{ title: 'Pistachio' }, { title: 'Butter Pecan' }],
+    },
     {
       title: 'Assorted Teas',
       subtitle:
@@ -68,7 +68,7 @@ const Menu = () => {
   return (
     <div className="flex flex-col items-center px-4 py-2 md:py-8">
       <h1 className="font-light text-center sm:text-3xl md:text-4xl lg:text-5xl text-darkGreen mb-2">
-        May Menu
+        September Menu
       </h1>
       <p className="mt-6 text-center max-w-2xl text-slate leading-relaxed mb-10">
         Every month, we work to develop a menu with seasonal flavors and
