@@ -115,7 +115,7 @@ const MenuPrint: PageWithLayout = () => {
           {pastriesSection && (
             <section className="mt-6">
               <SectionHeading>{pastriesSection.title}</SectionHeading>
-              <div className="mt-3 grid grid-cols-3 gap-6">
+              <div className="mt-3 grid grid-cols-3 gap-6 justify-items-center">
                 {pastriesSection.items.map((item) => (
                   <ItemEntry key={item.title} item={item} align="center" />
                 ))}
