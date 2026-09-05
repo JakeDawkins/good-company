@@ -135,7 +135,11 @@ const MenuPrint: PageWithLayout = () => {
                     {drinksSection.subtitle}
                   </p>
                 </div>
-                <DrinkKey colors={DRINK_COLORS} className="shrink-0" />
+                <DrinkKey
+                  colors={DRINK_COLORS}
+                  layout="row"
+                  className="shrink-0"
+                />
               </div>
               <div className="mt-5 grid grid-cols-3 gap-x-10 gap-y-5 max-w-xl mx-auto">
                 {DRINKS.map((drink) => (

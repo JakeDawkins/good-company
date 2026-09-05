@@ -11,18 +11,25 @@ export interface DrinkKeyProps {
   /** Override any drink element colors. Defaults to DRINK_COLORS. */
   colors?: DrinkColors;
   className?: string;
+  /**
+   * `grid` (default): equal-width cells.
+   * `row`: each item sizes to its content and items are spaced evenly.
+   */
+  layout?: 'grid' | 'row';
 }
 
 export const DrinkKey = ({
   colors = DRINK_COLORS,
   className,
+  layout = 'grid',
 }: DrinkKeyProps) => {
+  const layoutClasses =
+    layout === 'row'
+      ? 'flex flex-wrap items-center gap-x-6 gap-y-2'
+      : 'grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-2';
+
   return (
-    <div
-      className={`grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-2 ${
-        className ?? ''
-      }`}
-    >
+    <div className={`${layoutClasses} ${className ?? ''}`}>
       {KEY_ITEMS.map((item) => (
         <div key={item.color} className="flex items-center gap-2">
           <span
