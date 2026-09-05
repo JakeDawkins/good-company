@@ -107,7 +107,7 @@ const Menu = () => {
                 <>
                   {section.logo && (
                     <Link
-                      href={section.url}
+                      href={section.url ?? '#'}
                       target="_blank"
                       className="flex justify-center mb-5"
                     >
@@ -125,7 +125,7 @@ const Menu = () => {
                     This month&apos;s coffee was grown in {section.region} and
                     roasted by {section.roaster}.{' '}
                     <Link
-                      href={section.url}
+                      href={section.url ?? '#'}
                       target="_blank"
                       style={{ color: section.brandColor ?? '#37514D' }}
                       className="underline font-semibold hover:opacity-70 transition-opacity"
