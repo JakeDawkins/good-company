@@ -18,8 +18,8 @@ const menuData = {
           image: '/birthday-cake.svg',
         },
         {
-          title: 'Raspberry Muffins',
-          image: '/raspberry-muffin.svg',
+          title: 'Blueberry Muffins',
+          image: '/blueberry-muffin.svg',
           icon: (
             <span className="inline-block align-middle text-xs font-semibold uppercase tracking-wide text-white bg-darkGreen rounded-full px-2 py-0.5">
               Vegan
