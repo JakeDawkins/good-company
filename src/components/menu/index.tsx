@@ -2,86 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { DRINK_COLORS, DRINKS, DrinkDiagram, DrinkKey } from './drinks';
-
-const menuData = {
-  sections: [
-    {
-      title: 'Pastries',
-      subtitle: 'Pastries baked in-house for your enjoyment.',
-      items: [
-        {
-          title: 'Brown Butter Toffee & Chocolate Chip Cookies',
-          image: '/cookie.svg',
-        },
-        {
-          title: 'Birthday Cake',
-          image: '/birthday-cake.svg',
-        },
-        {
-          title: 'Blueberry Muffins',
-          image: '/blueberry-muffin.svg',
-          icon: (
-            <span className="inline-block align-middle text-xs font-semibold uppercase tracking-wide text-white bg-darkGreen rounded-full px-2 py-0.5">
-              Vegan
-            </span>
-          ),
-        },
-      ],
-    },
-    {
-      type: 'coffee',
-      pending: false,
-      roaster: 'East Crema',
-      name: 'Blue House Espresso',
-      region: 'Brazil',
-      roasterLocation: 'TBD',
-      roastDate: 'TBD',
-      url: 'https://eastcrema.com/products/blue-house-espresso',
-      logo: '/eastcrema-logo.png',
-      brandColor: '#14179A',
-    },
-    {
-      title: 'Flavors',
-      subtitle:
-        'Syrups homemade with fresh ingredients and infused into a simple syrup',
-      items: [
-        {
-          title: 'Pistachio',
-          subtitle: 'A more subtle, earthy flavor. Great in an iced latte!',
-          image: '/pistachio.svg',
-        },
-        {
-          title: 'Butter Pecan',
-          subtitle:
-            "A flavor native to and loved by the American South. Jake's favorite ever since he first tried it!",
-          image: '/pecan.svg',
-        },
-      ],
-    },
-    {
-      type: 'drinks',
-      title: 'Espresso Drinks',
-      subtitle: 'Available with dairy or oat milk',
-    },
-    {
-      title: 'Assorted Teas',
-      subtitle:
-        "Don't drink coffee, or want something less caffeinated? We've got you covered",
-      items: [
-        { title: 'Lemon & Ginger' },
-        { title: 'Japanese Roasted Green Tea' },
-        { title: 'Chamomile Tea' },
-        { title: 'English Breakfast Tea' },
-      ],
-    },
-  ],
-};
+import { menuData, menuTitle } from './menuData';
 
 const Menu = () => {
   return (
     <div className="flex flex-col items-center px-4 py-2 md:py-8">
       <h1 className="font-light text-center sm:text-3xl md:text-4xl lg:text-5xl text-darkGreen mb-2">
-        September Menu
+        {menuTitle}
       </h1>
       <p className="mt-6 text-center max-w-2xl text-slate leading-relaxed mb-10">
         Every month, we work to develop a menu with seasonal flavors and
