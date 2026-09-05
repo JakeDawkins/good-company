@@ -120,15 +120,17 @@ const MenuPrint: PageWithLayout = () => {
           {/* Espresso drinks + visualizations */}
           {drinksSection && (
             <section className="mt-8">
-              <div className="flex items-baseline justify-center gap-2">
-                <h2 className="text-lg font-semibold text-darkGreen">
-                  {drinksSection.title}
-                </h2>
-                <span className="text-xs italic text-slate">
-                  {drinksSection.subtitle}
-                </span>
+              <div className="flex items-center justify-between gap-4 border-b border-sage/60 pb-2">
+                <div>
+                  <h2 className="text-base font-semibold text-darkGreen">
+                    {drinksSection.title}
+                  </h2>
+                  <p className="text-xs italic text-slate">
+                    {drinksSection.subtitle}
+                  </p>
+                </div>
+                <DrinkKey colors={DRINK_COLORS} className="shrink-0" />
               </div>
-              <DrinkKey colors={DRINK_COLORS} className="mt-3 max-w-md mx-auto" />
               <div className="mt-5 grid grid-cols-3 gap-x-10 gap-y-5 max-w-xl mx-auto">
                 {DRINKS.map((drink) => (
                   <div
