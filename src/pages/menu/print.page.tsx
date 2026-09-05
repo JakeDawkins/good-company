@@ -42,8 +42,14 @@ const SectionHeading = ({ children }: { children: ReactNode }) => (
   </h2>
 );
 
-const ItemEntry = ({ item }: { item: MenuItem }) => (
-  <div className="flex items-start gap-2">
+const ItemEntry = ({
+  item,
+  align = 'start',
+}: {
+  item: MenuItem;
+  align?: 'start' | 'center';
+}) => (
+  <div className={`flex gap-2 ${align === 'center' ? 'items-center' : 'items-start'}`}>
     {item.image && (
       <Image
         src={item.image}
@@ -51,7 +57,7 @@ const ItemEntry = ({ item }: { item: MenuItem }) => (
         width={40}
         height={40}
         unoptimized
-        className="shrink-0 mt-0.5"
+        className={`shrink-0 ${align === 'start' ? 'mt-0.5' : ''}`}
       />
     )}
     <div className="leading-snug">
@@ -111,7 +117,7 @@ const MenuPrint: PageWithLayout = () => {
               <SectionHeading>{pastriesSection.title}</SectionHeading>
               <div className="mt-3 grid grid-cols-3 gap-6">
                 {pastriesSection.items.map((item) => (
-                  <ItemEntry key={item.title} item={item} />
+                  <ItemEntry key={item.title} item={item} align="center" />
                 ))}
               </div>
             </section>
