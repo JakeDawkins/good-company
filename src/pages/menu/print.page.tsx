@@ -11,6 +11,7 @@ import {
 import {
   DrinksSection,
   ListSection,
+  MenuItem,
   menuData,
   menuTitle,
 } from '../../components/menu/menuData';
@@ -26,6 +27,43 @@ const listSections = menuData.sections.filter(
 );
 const drinksSection = menuData.sections.find(
   (section): section is DrinksSection => section.type === 'drinks',
+);
+// Pastries get a full-width row at the top; everything else goes in columns.
+const pastriesSection = listSections.find(
+  (section) => section.title === 'Pastries',
+);
+const columnSections = listSections.filter(
+  (section) => section.title !== 'Pastries',
+);
+
+const SectionHeading = ({ children }: { children: ReactNode }) => (
+  <h2 className="text-base font-semibold text-darkGreen border-b border-sage/60 pb-1">
+    {children}
+  </h2>
+);
+
+const ItemEntry = ({ item }: { item: MenuItem }) => (
+  <div className="flex items-start gap-2">
+    {item.image && (
+      <Image
+        src={item.image}
+        alt={item.title}
+        width={40}
+        height={40}
+        unoptimized
+        className="shrink-0 mt-0.5"
+      />
+    )}
+    <div className="leading-snug">
+      <div className="text-sm font-medium text-darkGreen">
+        {item.title}
+        {item.icon ? <span className="ml-1">{item.icon}</span> : null}
+      </div>
+      {item.subtitle && (
+        <div className="text-xs text-slate">{item.subtitle}</div>
+      )}
+    </div>
+  </div>
 );
 
 const MenuPrint: PageWithLayout = () => {
@@ -45,10 +83,16 @@ const MenuPrint: PageWithLayout = () => {
             background: #ffffff;
           }
         }
+        /* Force background colors (legend swatches, badges) to print. */
+        .menu-sheet,
+        .menu-sheet * {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
       `}</style>
 
       <div className="min-h-screen bg-neutral-200 flex justify-center p-6 print:p-0 print:bg-white">
-        <div className="relative bg-white text-slate w-[210mm] min-h-[297mm] p-[12mm] shadow-lg print:shadow-none print:w-full print:min-h-0 print:p-0">
+        <div className="menu-sheet relative bg-white text-slate w-[210mm] min-h-[297mm] p-[12mm] shadow-lg print:shadow-none print:w-full print:min-h-0 print:p-0">
           <button
             type="button"
             onClick={() => window.print()}
@@ -60,6 +104,18 @@ const MenuPrint: PageWithLayout = () => {
           <h1 className="text-center text-4xl font-light text-darkGreen">
             {menuTitle}
           </h1>
+
+          {/* Pastries — full-width row */}
+          {pastriesSection && (
+            <section className="mt-6">
+              <SectionHeading>{pastriesSection.title}</SectionHeading>
+              <div className="mt-3 grid grid-cols-3 gap-6">
+                {pastriesSection.items.map((item) => (
+                  <ItemEntry key={item.title} item={item} />
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Espresso drinks + visualizations */}
           {drinksSection && (
@@ -93,39 +149,15 @@ const MenuPrint: PageWithLayout = () => {
             </section>
           )}
 
-          {/* Pastries / Flavors / Teas in columns */}
-          <div className="mt-10 grid grid-cols-3 gap-8">
-            {listSections.map((section) => (
+          {/* Flavors / Teas in columns */}
+          <div className="mt-8 grid grid-cols-2 gap-8">
+            {columnSections.map((section) => (
               <section key={section.title}>
-                <h2 className="text-base font-semibold text-darkGreen border-b border-sage/60 pb-1">
-                  {section.title}
-                </h2>
+                <SectionHeading>{section.title}</SectionHeading>
                 <ul className="mt-2 space-y-2">
-                  {section.items?.map((item) => (
-                    <li key={item.title} className="flex items-start gap-2">
-                      {item.image && (
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          width={36}
-                          height={36}
-                          unoptimized
-                          className="shrink-0 mt-0.5"
-                        />
-                      )}
-                      <div className="leading-snug">
-                        <div className="text-sm font-medium text-darkGreen">
-                          {item.title}
-                          {item.icon ? (
-                            <span className="ml-1">{item.icon}</span>
-                          ) : null}
-                        </div>
-                        {item.subtitle && (
-                          <div className="text-xs text-slate">
-                            {item.subtitle}
-                          </div>
-                        )}
-                      </div>
+                  {section.items.map((item) => (
+                    <li key={item.title}>
+                      <ItemEntry item={item} />
                     </li>
                   ))}
                 </ul>
