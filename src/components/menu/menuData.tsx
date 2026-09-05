@@ -56,8 +56,8 @@ export const menuData: { sections: MenuSection[] } = {
           image: '/birthday-cake.svg',
         },
         {
-          title: 'Blueberry Muffins',
-          image: '/blueberry-muffin.svg',
+          title: 'Lemon Cookies',
+          image: '/lemon-cookie.svg',
           icon: (
             <span className="inline-block align-middle text-xs font-semibold uppercase tracking-wide text-white bg-darkGreen rounded-full px-2 py-0.5">
               Vegan
@@ -106,7 +106,7 @@ export const menuData: { sections: MenuSection[] } = {
       subtitle:
         "Don't drink coffee, or want something less caffeinated? We've got you covered",
       items: [
-        { title: 'Lemon & Ginger' },
+        { title: 'Lemon & Ginger Tea' },
         { title: 'Japanese Roasted Green Tea' },
         { title: 'Chamomile Tea' },
         { title: 'English Breakfast Tea' },
