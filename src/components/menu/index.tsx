@@ -1,11 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import MakeItButton from '../recipes/MakeItButton';
+import { RecipeModalProvider } from '../recipes/RecipeModalProvider';
 import { DRINK_COLORS, DRINKS, DrinkDiagram, DrinkKey } from './drinks';
 import { menuData, menuTitle } from './menuData';
 
 const Menu = () => {
   return (
+    <RecipeModalProvider>
     <div className="flex flex-col items-center px-4 py-2 md:py-8">
       <h1 className="font-light text-center sm:text-3xl md:text-4xl lg:text-5xl text-darkGreen mb-2">
         {menuTitle}
@@ -127,7 +130,7 @@ const Menu = () => {
                           className="shrink-0"
                         />
                       )}
-                      <div>
+                      <div className="flex-1">
                         <h4 className="text-lg font-medium text-darkGreen">
                           {item.title}
                           {item?.icon ? (
@@ -140,6 +143,12 @@ const Menu = () => {
                           </p>
                         )}
                       </div>
+                      {item.recipeId && (
+                        <MakeItButton
+                          recipeId={item.recipeId}
+                          className="shrink-0"
+                        />
+                      )}
                     </div>
                   </div>
                 );
@@ -160,6 +169,7 @@ const Menu = () => {
         </p>
       </div> */}
     </div>
+    </RecipeModalProvider>
   );
 };
 

@@ -8,6 +8,10 @@ export interface MenuItem {
   subtitle?: string;
   image?: string;
   icon?: ReactNode;
+  // Links this item to a recipe in `recipes/recipeData`. When set, the menu
+  // shows a "Make it" button that opens the recipe (inline) or links out
+  // (external).
+  recipeId?: string;
 }
 
 export interface ListSection {
@@ -50,14 +54,17 @@ export const menuData: { sections: MenuSection[] } = {
         {
           title: 'Brown Butter Toffee & Chocolate Chip Cookies',
           image: '/cookie.svg',
+          recipeId: 'brown-butter-toffee-cookies',
         },
         {
           title: 'Birthday Cake',
           image: '/birthday-cake.svg',
+          recipeId: 'birthday-cake',
         },
         {
           title: 'Lemon Cookies',
           image: '/lemon-cookie.svg',
+          recipeId: 'lemon-cookies',
           icon: (
             <span className="inline-block align-middle text-xs font-semibold uppercase tracking-wide text-white bg-darkGreen rounded-full px-2 py-0.5">
               Vegan
@@ -87,12 +94,14 @@ export const menuData: { sections: MenuSection[] } = {
           title: 'Pistachio',
           subtitle: 'A more subtle, earthy flavor. Great in an iced latte!',
           image: '/pistachio.svg',
+          recipeId: 'pistachio-syrup',
         },
         {
           title: 'Butter Pecan',
           subtitle:
             "A flavor native to and loved by the American South. Jake's favorite ever since he first tried it!",
           image: '/pecan.svg',
+          recipeId: 'butter-pecan-syrup',
         },
       ],
     },

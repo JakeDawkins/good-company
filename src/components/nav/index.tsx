@@ -21,6 +21,12 @@ export default function Nav() {
       >
         Menu
       </Link>
+      <Link
+        className="text-slate uppercase tracking-wider text-sm font-medium border-b-2 border-transparent hover:border-sage hover:text-darkGreen transition-all duration-200 pb-1"
+        href="/recipes"
+      >
+        Recipes
+      </Link>
     </nav>
   );
 }
